@@ -1,0 +1,46 @@
+.flex-container {
+    display: flex;
+    background-color: grey;
+    
+    flex-direction: row;
+    justify-content: center; /* Main axis */
+    align-items: flex-end; /* Cross axis */
+}
+
+.flex-item{
+    width: 100px;
+}
+
+.item-shortest{
+    min-height: 10px;
+    background-color: purple;
+}
+
+.item-secondshortest{
+    min-height: 30px;
+    background-color: yellow;
+    flex-shrink: 0;
+}
+
+.item-thirdshortest{
+    min-height: 50px;
+    background-color: orange;
+}
+
+.item-fourthshortest{
+    min-height: 80px;
+    background-color: black;
+    flex-shrink: 0;
+}
+
+
+.item-mid {
+    min-height: 120px;
+    background-color: red;
+}
+
+.item-tallest {
+    min-height: 150px;
+    background-color: blue;
+    flex-shrink: 0;
+}

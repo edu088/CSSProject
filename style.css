@@ -1,46 +1,45 @@
 .flex-container {
-    display: flex;
-    background-color: grey;
-    
-    flex-direction: row;
-    justify-content: center; /* Main axis */
-    align-items: flex-end; /* Cross axis */
+  height: 700px;
+  display: flex;
+  background-color: grey;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /*justify-content: center;*/ /* Main axis */
+  align-items: flex-end; /* Cross axis */
+  /*align-content: center;*/
 }
 
-.flex-item{
-    width: 100px;
+.flex-item {
+  width: 100px;
+  flex-shrink: 0;
 }
 
-.item-shortest{
-    min-height: 10px;
-    background-color: purple;
+.item-shortest {
+  min-height: 10px;
+  background-color: purple;
 }
 
-.item-secondshortest{
-    min-height: 30px;
-    background-color: yellow;
-    flex-shrink: 0;
+.item-secondshortest {
+  min-height: 30px;
+  background-color: yellow;
 }
 
-.item-thirdshortest{
-    min-height: 50px;
-    background-color: orange;
+.item-thirdshortest {
+  min-height: 50px;
+  background-color: orange;
 }
 
-.item-fourthshortest{
-    min-height: 80px;
-    background-color: black;
-    flex-shrink: 0;
+.item-fourthshortest {
+  min-height: 80px;
+  background-color: black;
 }
-
 
 .item-mid {
-    min-height: 120px;
-    background-color: red;
+  min-height: 120px;
+  background-color: red;
 }
 
 .item-tallest {
-    min-height: 150px;
-    background-color: blue;
-    flex-shrink: 0;
+  min-height: 150px;
+  background-color: blue;
 }
